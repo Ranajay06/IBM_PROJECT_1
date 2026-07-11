@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rana Jay - Computer Science Engineering Student | Future Software Engineer. Portfolio showcasing skills, projects, and achievements." />
+  <meta name="keywords" content="Rana Jay, Computer Science, Software Engineer, Portfolio, CSE Student, Web Developer" />
+  <meta name="author" content="Rana Jay" />
+  <meta property="og:title" content="Rana Jay | CSE Student Portfolio" />
+  <meta property="og:description" content="Computer Science Engineering Student passionate about software development and AI." />
+  <meta property="og:type" content="website" />
+  <title>Rana Jay | CSE Student Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-ring"></div>
+      <p class="loader-text">Rana Jay</p>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scrollProgress" class="scroll-progress"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>RJ<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-container">
+      <div class="hero-content" data-aos="fade-right">
+        <p class="hero-greeting"><i class="fas fa-hand-wave"></i> Hello World!</p>
+        <h1 class="hero-title">Hi, I'm <span class="gradient-text">Rana Jay</span></h1>
+        <h2 class="hero-subtitle">
+          <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          I am a Computer Science Engineering student passionate about software development,
+          artificial intelligence, web technologies, and problem-solving. I enjoy learning
+          modern technologies and building innovative projects that solve real-world problems.
+        </p>
+        <div class="hero-btns">
+          <a href="assets/resume.pdf" download class="btn btn-primary">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:ranajay@email.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+1234567890" class="social-icon" title="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="hero-illustration" data-aos="fade-left">
+        <div class="hero-code-card">
+          <div class="code-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="code-filename">portfolio.py</span>
+          </div>
+          <div class="code-body">
+            <p><span class="kw">class</span> <span class="cls">RanaJay</span>:</p>
+            <p>&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">__init__</span>(self):</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="str">"Rana Jay"</span></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;self.role = <span class="str">"CSE Student"</span></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;self.passion = [</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Software Dev"</span>,</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"AI &amp; ML"</span>,</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Web Tech"</span></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;]</p>
+            <p>&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">get_goal</span>(self):</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> <span class="str">"Build the future"</span></p>
+            <p class="code-cursor-line"><span class="cmt"># Currently learning...</span><span class="blink-cursor">▌</span></p>
+          </div>
+        </div>
+        <div class="floating-badge badge-1"><i class="fab fa-python"></i> Python</div>
+        <div class="floating-badge badge-2"><i class="fab fa-java"></i> Java</div>
+        <div class="floating-badge badge-3"><i class="fas fa-brain"></i> AI/ML</div>
+        <div class="floating-badge badge-4"><i class="fab fa-js"></i> JS</div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down-btn">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">Get to Know Me</p>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap" data-aos="fade-right">
+          <div class="about-avatar">
+            <div class="avatar-inner">
+              <i class="fas fa-user-circle avatar-icon"></i>
+            </div>
+            <div class="avatar-ring ring1"></div>
+            <div class="avatar-ring ring2"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card"><span class="stat-num">3+</span><span class="stat-label">Projects</span></div>
+            <div class="stat-card"><span class="stat-num">13+</span><span class="stat-label">Skills</span></div>
+            <div class="stat-card"><span class="stat-num">4+</span><span class="stat-label">Certs</span></div>
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-left">
+          <h3 class="about-name">Rana Jay</h3>
+          <p class="about-role"><i class="fas fa-graduation-cap"></i> Computer Science Engineering Student</p>
+          <p class="about-bio">
+            I'm a dedicated Computer Science Engineering student with a deep passion for technology and innovation.
+            My journey in tech is driven by curiosity and a commitment to continuous learning, staying up-to-date
+            with the latest trends in software development, artificial intelligence, and web technologies.
+          </p>
+          <p class="about-bio">
+            I thrive in collaborative environments and enjoy working in teams to build meaningful solutions.
+            My strong foundation in data structures, algorithms, and object-oriented programming enables me
+            to approach complex problems with structured, efficient thinking.
+          </p>
+          <p class="about-bio">
+            <strong>Career Objective:</strong> To secure a challenging position at a forward-thinking organization
+            where I can leverage my technical skills, contribute to impactful projects, and grow as a software engineer
+            while making a positive difference through technology.
+          </p>
+          <div class="about-traits">
+            <span class="trait"><i class="fas fa-rocket"></i> Fast Learner</span>
+            <span class="trait"><i class="fas fa-users"></i> Team Player</span>
+            <span class="trait"><i class="fas fa-puzzle-piece"></i> Problem Solver</span>
+            <span class="trait"><i class="fas fa-code"></i> Clean Coder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">Academic Background</p>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"><i class="fas fa-university"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="edu-header">
+              <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div class="edu-status active-badge">Currently Pursuing</div>
+            </div>
+            <h3 class="edu-degree">Bachelor of Technology</h3>
+            <h4 class="edu-field">Computer Science Engineering</h4>
+            <p class="edu-institution"><i class="fas fa-building-columns"></i> Your University Name &mdash; Your College Name</p>
+            <p class="edu-year"><i class="fas fa-calendar-alt"></i> Expected Graduation: 2027</p>
+            <p class="edu-desc">
+              Pursuing a comprehensive curriculum covering Data Structures, Algorithms, Operating Systems,
+              Database Management, Computer Networks, Software Engineering, Artificial Intelligence,
+              and Web Technologies.
+            </p>
+            <div class="edu-tags">
+              <span>DSA</span><span>DBMS</span><span>OS</span><span>AI</span><span>Networks</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up" data-delay="200">
+          <div class="timeline-dot"><i class="fas fa-school"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="edu-header">
+              <div class="edu-icon"><i class="fas fa-school"></i></div>
+              <div class="edu-status completed-badge">Completed</div>
+            </div>
+            <h3 class="edu-degree">Higher Secondary Education (12th)</h3>
+            <h4 class="edu-field">Science Stream — PCM / PCM + CS</h4>
+            <p class="edu-institution"><i class="fas fa-building-columns"></i> Your School Name</p>
+            <p class="edu-year"><i class="fas fa-calendar-alt"></i> Year of Completion: 20XX</p>
+            <p class="edu-desc">Focused on Physics, Chemistry, Mathematics, and Computer Science fundamentals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">What I Know</p>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-categories">
+        <div class="skills-group" data-aos="fade-up">
+          <h3 class="skills-group-title"><i class="fas fa-code"></i> Programming Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-card glass-card"><div class="skill-icon" style="color:#6272a4"><i class="fas fa-copyright"></i></div><span>C</span></div>
+            <div class="skill-card glass-card"><div class="skill-icon" style="color:#00599C"><i class="fas fa-plus"></i></div><span>C++</span></div>
+            <div class="skill-card glass-card"><div class="skill-icon" style="color:#f89820"><i class="fab fa-java"></i></div><span>Java</span></div>
+            <div class="skill-card glass-card"><div class="skill-icon" style="color:#3572A5"><i class="fab fa-python"></i></div><span>Python</span></div>
+            <div class="skill-card glass-card"><div class="skill-icon" style="color:#f7df1e"><i class="fab fa-js"></i></div><span>JavaScript</span></div>
+            <div class="skill-card glass-card"><div class="skill-icon" style="color:#336791"><i class="fas fa-database"></i></div><span>SQL</span></div>
+          </div>
+        </div>
+        <div class="skills-group" data-aos="fade-up" data-delay="150">
+          <h3 class="skills-group-title"><i class="fas fa-globe"></i> Web Technologies</h3>
+          <div class="skills-grid">
+            <div class="skill-card glass-card"><div class="skill-icon" style="color:#e34c26"><i class="fab fa-html5"></i></div><span>HTML5</span></div>
+            <div class="skill-card glass-card"><div class="skill-icon" style="color:#264de4"><i class="fab fa-css3-alt"></i></div><span>CSS3</span></div>
+          </div>
+        </div>
+        <div class="skills-group" data-aos="fade-up" data-delay="300">
+          <h3 class="skills-group-title"><i class="fas fa-tools"></i> Tools & Concepts</h3>
+          <div class="skills-grid">
+            <div class="skill-card glass-card"><div class="skill-icon" style="color:#f05032"><i class="fab fa-git-alt"></i></div><span>Git</span></div>
+            <div class="skill-card glass-card"><div class="skill-icon" style="color:#ffffff"><i class="fab fa-github"></i></div><span>GitHub</span></div>
+            <div class="skill-card glass-card"><div class="skill-icon" style="color:#4ec9b0"><i class="fas fa-sitemap"></i></div><span>Data Structures</span></div>
+            <div class="skill-card glass-card"><div class="skill-icon" style="color:#c792ea"><i class="fas fa-object-group"></i></div><span>OOP</span></div>
+            <div class="skill-card glass-card"><div class="skill-icon" style="color:#82aaff"><i class="fas fa-lightbulb"></i></div><span>Problem Solving</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">What I've Built</p>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card" data-aos="fade-up">
+          <div class="project-img">
+            <div class="project-img-placeholder"><i class="fas fa-robot"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+              <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">AI / Machine Learning</span>
+            <h3 class="project-title">AI Chatbot Assistant</h3>
+            <p class="project-desc">A conversational AI chatbot built using Python and NLP techniques. Capable of understanding user queries and providing relevant responses using a trained model.</p>
+            <div class="project-techs">
+              <span>Python</span><span>NLP</span><span>Machine Learning</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-aos="fade-up" data-delay="150">
+          <div class="project-img">
+            <div class="project-img-placeholder"><i class="fas fa-shopping-cart"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+              <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Web Development</span>
+            <h3 class="project-title">E-Commerce Web App</h3>
+            <p class="project-desc">A full-featured e-commerce platform with product listing, cart management, user authentication, and order tracking. Built with modern web technologies.</p>
+            <div class="project-techs">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-aos="fade-up" data-delay="300">
+          <div class="project-img">
+            <div class="project-img-placeholder"><i class="fas fa-tasks"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+              <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Desktop App</span>
+            <h3 class="project-title">Task Manager App</h3>
+            <p class="project-desc">A Java-based desktop task management application with features like add/edit/delete tasks, priority setting, deadline tracking, and data persistence.</p>
+            <div class="project-techs">
+              <span>Java</span><span>OOP</span><span>File I/O</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">My Milestones</p>
+        <h2 class="section-title">My <span class="gradient-text">Achievements</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card" data-aos="fade-up">
+          <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+          <h3>Hackathon Participation</h3>
+          <p>Participated in college-level hackathons, developing innovative solutions under time constraints and presenting to judges.</p>
+          <span class="ach-year">20XX</span>
+        </div>
+        <div class="achievement-card glass-card" data-aos="fade-up" data-delay="100">
+          <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+          <h3>Academic Excellence</h3>
+          <p>Consistently maintained outstanding academic performance throughout the engineering program with high CGPA.</p>
+          <span class="ach-year">Ongoing</span>
+        </div>
+        <div class="achievement-card glass-card" data-aos="fade-up" data-delay="200">
+          <div class="achievement-icon"><i class="fas fa-code-branch"></i></div>
+          <h3>Open Source Contributor</h3>
+          <p>Contributed to open-source projects on GitHub, collaborating with developers worldwide to improve software.</p>
+          <span class="ach-year">20XX</span>
+        </div>
+        <div class="achievement-card glass-card" data-aos="fade-up" data-delay="300">
+          <div class="achievement-icon"><i class="fas fa-star"></i></div>
+          <h3>Competitive Programming</h3>
+          <p>Solved 100+ problems on competitive programming platforms, sharpening algorithmic thinking and coding speed.</p>
+          <span class="ach-year">Ongoing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section certifications-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">Verified Learning</p>
+        <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card glass-card" data-aos="fade-up">
+          <div class="cert-logo"><i class="fab fa-python"></i></div>
+          <div class="cert-body">
+            <h3>Python for Everybody</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Coursera / University of Michigan</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> 20XX</p>
+            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </div>
+        </div>
+        <div class="cert-card glass-card" data-aos="fade-up" data-delay="100">
+          <div class="cert-logo"><i class="fas fa-database"></i></div>
+          <div class="cert-body">
+            <h3>SQL & Database Management</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Udemy / Coursera</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> 20XX</p>
+            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </div>
+        </div>
+        <div class="cert-card glass-card" data-aos="fade-up" data-delay="200">
+          <div class="cert-logo"><i class="fas fa-brain"></i></div>
+          <div class="cert-body">
+            <h3>Machine Learning Fundamentals</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Coursera / Andrew Ng</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> 20XX</p>
+            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </div>
+        </div>
+        <div class="cert-card glass-card" data-aos="fade-up" data-delay="300">
+          <div class="cert-logo"><i class="fab fa-html5"></i></div>
+          <div class="cert-body">
+            <h3>Responsive Web Design</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> freeCodeCamp</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> 20XX</p>
+            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section resume-section">
+    <div class="container">
+      <div class="resume-cta glass-card" data-aos="fade-up">
+        <div class="resume-cta-icon"><i class="fas fa-file-pdf"></i></div>
+        <div class="resume-cta-text">
+          <h2>Download My <span class="gradient-text">Resume</span></h2>
+          <p>Get a detailed overview of my education, skills, projects, and certifications.</p>
+        </div>
+        <a href="assets/resume.pdf" download class="btn btn-primary btn-lg">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">Get In Touch</p>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <p class="contact-intro">I'm open to internship opportunities, freelance projects, and collaborative work. Feel free to reach out!</p>
+          <div class="contact-items">
+            <a href="mailto:ranajay@email.com" class="contact-item glass-card">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <div><span class="contact-label">Email</span><span class="contact-val">ranajay@email.com</span></div>
+            </a>
+            <a href="tel:+1234567890" class="contact-item glass-card">
+              <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+              <div><span class="contact-label">Phone</span><span class="contact-val">+1 (234) 567-890</span></div>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-item glass-card">
+              <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div><span class="contact-label">LinkedIn</span><span class="contact-val">linkedin.com/in/ranajay</span></div>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="contact-item glass-card">
+              <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+              <div><span class="contact-label">GitHub</span><span class="contact-val">github.com/ranajay</span></div>
+            </a>
+            <div class="contact-item glass-card">
+              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div><span class="contact-label">Location</span><span class="contact-val">Your City, Country</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <form class="contact-form glass-card" id="contactForm" novalidate>
+            <h3 class="form-title">Send a Message</h3>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Message subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>RJ<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-tagline">Building the future, one line of code at a time.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:ranajay@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Rana Jay. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top -->
+  <button id="scrollTop" class="scroll-top-btn" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
